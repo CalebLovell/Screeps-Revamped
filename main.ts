@@ -1,3 +1,3 @@
-import { harvest } from "./src/tasks/harvestt
+import { harvest } from "./src/tasks/harvest"
 
 console.log(harvest);
