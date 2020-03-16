@@ -1,2 +1,3 @@
-let message: string = `hello`;
-console.log(message);
+import { harvest } from "./tasks/harvest";
+
+console.log(harvest);
