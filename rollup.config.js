@@ -9,11 +9,11 @@ import screeps from "rollup-plugin-screeps";
 let cfg;
 const dest = process.env.DEST;
 if (!dest) {
-    console.log('\x1b[46m%s\x1b[0m \x1b[36m%s\x1b[0m', 'Compiling Overmind...', '(deploy destination: none)');
+    console.log(`Compiling TS files for private server.`);
 } else if ((cfg = require("./screeps")[dest]) == null) {
     throw new Error("Invalid upload destination");
 } else {
-    console.log('\x1b[46m%s\x1b[0m \x1b[36m%s\x1b[0m', 'Compiling Overmind...', `(deploy destination: ${dest})`);
+    console.log(`Compiling TS files for deploy destination: ${dest})`);
 }
 
 const ignoreWarnings = ['commonjs-proxy',
@@ -29,7 +29,6 @@ export default {
         resolve(),
         commonjs({
                      namedExports: {
-                         'src/Overmind_obfuscated': ['_Overmind'],
                          'screeps-profiler': ['profiler'],
                          'columnify': ['columnify']
                      }
