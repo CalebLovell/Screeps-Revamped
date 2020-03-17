@@ -1,8 +1,5 @@
 console.log('test')
 const gameRooms = ['W2N5'];
-import { test } from "test/test";
-
-test()
 
 let currentRoom = Game.spawns.Spawn1.room;
 let roomControllerLevel = currentRoom.controller?.level ?? 1;
