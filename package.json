@@ -1,26 +1,15 @@
 {
-  "name": "Overmind",
-  "version": "0.5.2",
-  "description": "Overmind Screeps AI",
-  "author": "Ben Bartlett",
+  "name": "Screeps-Revamped",
+  "description": "Screeps v3 with the boys",
+  "author": "CL, ME, KZ",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bencbartlett/Overmind.git"
-  },
-  "homepage": "https://github.com/bencbartlett/Overmind#readme",
-  "bugs": {
-    "url": "https://github.com/bencbartlett/Overmind/issues"
-  },
   "scripts": {
     "build": "tsc -p .",
     "lint": "tslint \"src/**/*.ts\"",
     "clean": "rm -rf tsc-out && rm -rf dist",
-    "obfuscate": "tsc && javascript-obfuscator tsc-out/Overmind.js --output src/Overmind_obfuscated.js --compact false --self-defending true --string-array true --string-array-threshold 1 --string-array-encoding true && javascript-obfuscator tsc-out/assimilation/Assimilator.js --output src/assimilation/Assimilator_obfuscated.js --compact false --self-defending true --string-array true --string-array-threshold 1 --string-array-encoding true",
     "compile": "rollup -c",
     "push-main": "rollup -c --environment DEST:main",
     "push-pserver": "rollup -c",
-    "push-screepsplus": "rollup -c --environment DEST:screepsplus",
     "test": "npm run clean && npm run lint && npm run build"
   },
   "devDependencies": {
