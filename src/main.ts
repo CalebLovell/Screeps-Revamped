@@ -2,7 +2,7 @@ console.log('test')
 const gameRooms = ['W2N5'];
 
 let currentRoom = Game.spawns.Spawn1.room;
-let roomControllerLevel = currentRoom.controller!.level
+let roomControllerLevel = currentRoom.controller?.level ?? 1;
 import { spawnCreeps } from "spawners/spawner";
 import { assignTasks } from "tasks/task";
 // // import { screepsWork } from "./src/spawners/spawner";
