@@ -1,5 +1,6 @@
 {
+	"license": "MIT",
 	"scripts": {
-		"compile": "tsc main.ts"
+		"compile": "tsc src/*/*.ts"
 	}
 }
