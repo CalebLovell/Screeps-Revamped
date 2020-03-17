@@ -19,12 +19,8 @@
     "allowUnreachableCode": false,
     "removeComments": false
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
   "typedocOptions": {
     "mode": "file",
     "out": "../overmind-docs/docs",
@@ -34,4 +30,3 @@
     "readme": "none"
   }
 }
-
