@@ -1,2 +1,2 @@
 .env
-deployToLocal.sh
+deploy.sh
